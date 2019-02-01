@@ -16,8 +16,8 @@ int main() {
 
   for(int i = 0; i < 512; i++){
     for(int j = 0; j < 512; j++){
-      rgb[0] = i%256;
-      rgb[1] = (j * i) %256;
+      rgb[0] = j%256;
+      rgb[1] = (i*i+j)%256;
       rgb[2] = i%256;
 
       sprintf(line, "%d %d %d ",rgb[0],rgb[1],rgb[2]);
